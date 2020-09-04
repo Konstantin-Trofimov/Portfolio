@@ -1,0 +1,89 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, 270px) / repeat(4, 270px);
+        gap: 13px;
+        margin-top: 60px;
+        padding: 0 10px 0 10px;
+    }
+    &__item {
+        display: grid;
+        grid-template-rows: 85px 130px;
+        border: 1px solid #000000;
+        padding: 30px 30px 30px 25px;
+        &-title {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-descr {
+            margin-top: 15px;
+            width: 211px;
+            height: 94px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__progress {
+        padding-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 38px;
+        &-item {
+            display: grid;
+            grid-template: repeat(2, 32px) / repeat(2, 1fr);
+            
+        }
+        &-title {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            position: relative;
+            padding-left: 13px;
+            @include before_circle;
+            &:before {
+                top: -20%;
+                left: 0;
+            }
+        }
+        &-value {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: end;
+            padding-right: 10px;
+        }
+        &-bar {
+            position: relative;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-top: 27px; 
+            background: #E8E4DE;
+            width: 350px;
+            height: 14px;
+            z-index: 0;
+            &_line {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                height: 100%;
+                border-radius: 4px;
+                background: $main-color;
+            }
+        }
+    }
+    
+}
+
