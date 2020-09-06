@@ -11,9 +11,8 @@ closeElem.addEventListener('click', () => {
 });
 
 const countersValue = document.querySelectorAll('.skills__progress-value'),
-    lines = document.querySelectorAll('.skills__progress-bar_line');
+    lines = document.querySelectorAll('.skills__progress-line');
 
 countersValue.forEach((item, i) => {
-    console.log(lines[i]);
     lines[i].style.width = item.innerHTML;
 });
