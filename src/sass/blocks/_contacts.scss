@@ -1,5 +1,5 @@
 .contacts {
-    padding-top: 120px 0 90px 0;
+    padding: 120px 0 90px 0;
     &__wrapper {
         padding: 52px 0 35px 0;
         display: grid;
@@ -72,7 +72,7 @@
         input {
             width: 100%;
             height: 100%;
-            padding-left: 0 20px;
+            padding: 0 20px;
             font-size: 12px;
             line-height: 18px;
             border: 1px solid #000000;
@@ -85,7 +85,7 @@
             width: 100%;
             height: 100%;
             resize: none;
-            padding-left: 20px 20px;
+            padding: 20px 20px;
             font-size: 12px;
             line-height: 18px;
             border: 1px solid #000000;
